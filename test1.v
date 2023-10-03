@@ -26,3 +26,5 @@ module top_module(
         .sum (sum[31:16])
     );
 endmodule
+
+bufan测试一下新功能
