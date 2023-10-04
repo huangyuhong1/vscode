@@ -14,11 +14,15 @@ initial begin
     #2 b=0;a=1;
     #2 b=1;
     #2 a=0;b=0;
-    #2 $finish;
+    #1 $finish;
 end
 
 //例化mymodule模块
-  
+  mymodule u1(
+    .a (a),
+    .b (b),
+    .q (q)
+  );
 endmodule
 module mymodule(
 input a,b,
